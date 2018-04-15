@@ -1,0 +1,277 @@
+:root {
+  --colorbase1: #c4caaa;
+  --colorbase2: #333;
+  --colorbase3: #e3a459;
+  --spacing: 30px;
+}
+
+body {
+  background: var(--colorbase2); 
+  max-width: 600px;
+  margin: auto;
+}
+
+.button {
+  color: white;
+  background: var(--colorbase1);
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 1s; 
+}
+
+.button:hover {
+  background: var(--colorbase2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.top-header {
+  background-color: var(--colorbase1);
+  padding: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header span { 
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.top-header a {
+  color: #7e8465;
+}
+
+.header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);  
+}
+
+.header img {
+  width: 80px;
+  height: 80px;
+}
+
+.header a {
+  color: var(--colorbase2)
+}
+
+.banner img {
+  width: 100%;
+  padding: 0%;
+}
+
+.banner {
+  color: white;
+}
+
+.banner div {
+  background: var(--colorbase3);
+  padding: var(--spacing);    
+}
+
+.banner h1 {
+  margin-top: 0px;
+}
+
+.banner a {
+  color: var(--colorbase2)
+}
+
+.columns-section {
+  display: flex;
+}
+.columns-section div {
+  background: white;
+  padding: var(--spacing);
+  margin: 10px 0;   
+}
+
+.columns-section div:first-child {
+  margin-right: 5px;
+}
+
+.columns-section div:last-child {
+  margin-left: 5px;
+}
+
+.columns-section h2 {
+  color: var(--colorbase2);
+  margin-top: 0;
+}
+
+.columns-section p {
+  color: #aaaaaa;
+}
+
+.picture-text {
+  display: flex;
+}
+
+.picture-text .picture, .picture-text .text {
+  width: 50%;
+}
+
+.picture-text .picture {
+  background-image: url("../../pictures/medImg.jpg");
+  background-size: cover;
+  min-height: 200px;
+}
+
+.picture-text .text {
+  background: white;
+  padding: var(--spacing);
+  box-sizing: border-box;
+}
+
+.picture-text .button {
+  background: #e2a459;
+}
+
+.faq {
+  text-align: center;
+  background-color: var(--colorbase1);
+  padding: var(--spacing);
+}
+
+.faq h2 {
+  font-family: "Times New Roman";
+  padding: 0 25%;
+  margin: auto;
+  position: relative;
+  margin-top: 0;
+}
+
+.faq h2:before, .faq h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  background-color: #a9b18a;
+  top: 50%;
+}
+
+.faq h2:before {
+  left: 0;
+}
+
+.faq h2:after {
+  right: 0;
+}
+
+.faq .button {
+  background-color: #7e8465;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: var(--spacing);
+  margin: 10px 0;
+}
+
+.blog h2 {
+  font-family: "Times New Roman";
+  color: var(--colorbase2);
+}
+
+.blog p {
+  color: rgb(184, 180, 180);
+  width: 80%;
+}
+
+.blog img {
+  width: 130px;
+}
+
+.blog .button {
+  color: #7e8465;
+  background-color: white;
+  padding: 0;
+}
+
+.footer {
+  padding: var(--spacing) 0;
+  color: rgb(184, 180, 180);
+}
+
+.footer h2 {
+  margin: auto;
+  position: relative;
+}
+
+.footer h2:before, .footer h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(184, 180, 180);
+}
+
+.footer p {
+  text-align: center;
+  margin: 4% -1%;
+}
+
+.sub-footer {
+  display: flex;
+}
+
+.sub-footer .contacts, .sub-footer .social-media {
+  width: 50%;
+}
+
+.sub-footer .button {
+  background: var(--colorbase2);
+} 
+
+.sub-footer img {
+  max-height: 70px;
+}
+
+.sub-footer img:first-of-type {
+  margin-top: 10%;
+  margin-left: 35%  
+}
+
+.contacts a {
+  color: rgb(184, 180, 180);
+}
+
+@media(max-width: 500px) {
+
+  .columns-section {
+    flex-direction: column;
+  }
+
+  .columns-section div {
+    margin: 10px 0 !important;
+  }
+
+  .picture-text {
+    flex-direction: column;
+  }
+
+  .picture-text .picture, .picture-text .text {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .picture-text .picture {
+    min-height: 300px;
+  }
+
+  .sub-footer img {
+    max-height: 50px;
+  }
+
+}
